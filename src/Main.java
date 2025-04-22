@@ -15,14 +15,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // 1. Istanza della tua logica esistente
         Board board = new Board();
         Player playerX = new Player("Spongebob", 'X');
         Player playerO = new Player("Patrick", 'O');
         game = new Game(board, playerX, playerO);
         game.start();
 
-        // 2. Griglia visuale 3x3
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER);
         grid.setHgap(5);
@@ -61,7 +59,6 @@ public class Main extends Application {
             }
         }
 
-        // 3. Layout
         VBox root = new VBox(20, statusLabel, grid);
         root.setAlignment(Pos.CENTER);
 
@@ -74,6 +71,6 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args); // ← importante per avviare JavaFX
+        launch(args); 
     }
 }

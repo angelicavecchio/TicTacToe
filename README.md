@@ -4,7 +4,7 @@ A simple yet complete implementation of the classic Tic Tac Toe game using **Jav
 
 ---
 
-##Features
+## Features
 
 - Two-player mode (X vs O)
 - GUI built with JavaFX
